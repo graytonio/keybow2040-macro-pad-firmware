@@ -1,0 +1,144 @@
+from keymap import LayeredKeyConfig, KeyConfig
+from lib.adafruit_hid.keycode import Keycode
+
+KeyConfigs: dict[int, LayeredKeyConfig] = {
+    0: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.ZERO],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        )
+    }),
+    1: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.ONE],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    2: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.TWO],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    3: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.THREE],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    4: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.FOUR],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255),
+        ),
+    }),
+    5: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.FIVE],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    6: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.SIX],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    7: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.SEVEN],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    8: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.EIGHT],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    9: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.ONE],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    10: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT,
+                       Keycode.ALT, Keycode.NINE],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    11: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT, Keycode.ALT, Keycode.A],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    12: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT, Keycode.ALT, Keycode.B],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    13: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT, Keycode.ALT, Keycode.C],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    14: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT, Keycode.ALT, Keycode.D],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    }),
+    15: LayeredKeyConfig(layers={
+        0: KeyConfig(
+            key_codes=[Keycode.CONTROL, Keycode.SHIFT, Keycode.ALT, Keycode.E],
+            released_color=(255, 255, 255),
+            pressed_color=(255, 0, 0),
+            held_color=(0, 0, 255)
+        ),
+    })
+}
