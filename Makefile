@@ -10,3 +10,7 @@ upload-lib:
 upload-code:
 	@echo "Uploading Code files to ${upload_path}"
 	cp *.py ${upload_path}
+
+upload-config:
+	@echo "Uploading Config file to ${upload_path}"
+	cp config.py ${upload_path}
