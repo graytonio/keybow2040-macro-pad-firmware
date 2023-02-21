@@ -1,19 +1,16 @@
 import usb_hid
-from adafruit_hid.keycode import Keycode
-from pmk.platform.keybow2040 import Keybow2040 as Hardware
-from pmk import PMK, Key
-from adafruit_hid.keyboard import Keyboard
-from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
+from lib.pmk.platform.keybow2040 import Keybow2040 as Hardware
+from lib.pmk import PMK, Key
+from lib.adafruit_hid.keyboard import Keyboard
+from lib.adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
 
 
 class KeyConfig:
-    def __init__(self, KeyCodes: list[int], ReleasedColor: tuple[int, int, int], PressedColor: tuple[int, int, int], HeldColor: tuple[int, int, int], Cords: dict[int, list[int]] = {}):
+    def __init__(self, KeyCodes: list[int], ReleasedColor: tuple[int, int, int], PressedColor: tuple[int, int, int], HeldColor: tuple[int, int, int]):
         self.KeyCodes = KeyCodes
         self.ReleasedColor = ReleasedColor
         self.PressedColor = PressedColor
         self.HeldColor = HeldColor
-        # Mapping held keys with this key to a key combo only supports 2 key cords
-        self.Cords = Cords
 
 
 class LayeredKeyConfig:

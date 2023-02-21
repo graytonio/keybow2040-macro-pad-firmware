@@ -1,5 +1,5 @@
 from keymap import LayeredKeyConfig, KeyConfig
-from adafruit_hid.keycode import Keycode
+from lib.adafruit_hid.keycode import Keycode
 
 KeyConfigs: dict[int, LayeredKeyConfig] = {
     0: LayeredKeyConfig(layers={
