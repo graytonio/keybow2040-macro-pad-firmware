@@ -12,6 +12,7 @@ This is firmware made for the [Pimoroni Keybow 2040](https://shop.pimoroni.com/p
 
 - [ ] Serial communication. Purpose TBD
 - [ ] Mutli Key Cords
+- [ ] Makefile auto discover board directory
 
 ## Configuration
 
@@ -32,3 +33,7 @@ KeyConfigs: dict[int, LayeredKeyConfig] = {
     }),
 }
 ```
+
+## Uploading
+
+To upload your code to the board, assuming you are using is running CircuitPython. You can either copy all the files to the board manually or you can configure the Makefile to point towards where the CIRCUITPY drive is mounted on your computer then use `make upload`.
