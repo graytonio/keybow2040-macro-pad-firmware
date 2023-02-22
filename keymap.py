@@ -55,8 +55,15 @@ class MacroBoardConfig:
         if not self.key_layers[key_code].has_layer(self.layer):
             return
 
-        self.keyboard.send(
-            *self.key_layers[key_code].layers[self.layer].key_codes)
+        # If configured as a single key press
+        if all(isinstance(x, int) for x in self.key_layers[key_code].layers[self.layer].key_codes):
+            self.keyboard.send(*self.key_layers[key_code].layers[self.layer].key_codes)
+            return
+
+        # If configured as series of key presses
+        for key_codes in self.key_layers[key_code].layers[self.layer].key_codes:
+            self.keyboard.send(*key_codes)
+            time.sleep(0.001)
 
     def set_key_released_color(self, key_code: int):
         '''Sets the given key to the led pattern for released. If no led pattern is configured the led is set to (255, 255, 255)'''
