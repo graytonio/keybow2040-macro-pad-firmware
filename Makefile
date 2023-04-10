@@ -1,7 +1,7 @@
 
 upload_path := /media/${USER}/CIRCUITPY
 
-upload: upload-lib upload-code
+upload: upload-lib upload-code upload-config
 
 upload-lib:
 	@echo "Uploading Libraries to ${upload_path}/lib"
